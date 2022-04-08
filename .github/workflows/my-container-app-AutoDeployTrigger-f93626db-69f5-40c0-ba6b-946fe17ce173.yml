@@ -44,6 +44,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    
+    environment:
+      name: container-app-env
       
     steps:
       - name: Azure Login
